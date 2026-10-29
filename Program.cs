@@ -14,6 +14,8 @@ services.AddDbContext<AppDbContext>(options =>
 
 services.AddScoped<ICategoryRepository, CategoryRepository>();
 services.AddScoped<ICategoryService, CategoryService>();
+services.AddScoped<IAuthorRepository, AuthorRepository>();
+services.AddScoped<IAuthorService, AuthorService>();
 
 using var provider = services.BuildServiceProvider();
 using var scope = provider.CreateScope();
