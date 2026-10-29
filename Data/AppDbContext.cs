@@ -14,6 +14,7 @@ namespace LibraryManagementSystemEFCore.Data
         public DbSet<Category> Categories => Set<Category>();
         public DbSet<Author> Authors => Set<Author>();
         public DbSet<Book> Books => Set<Book>();
+        public DbSet<Member> Members => Set<Member>();
 
         protected override void OnConfiguring(
             DbContextOptionsBuilder optionsBuilder)
