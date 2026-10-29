@@ -16,6 +16,8 @@ services.AddScoped<ICategoryRepository, CategoryRepository>();
 services.AddScoped<ICategoryService, CategoryService>();
 services.AddScoped<IAuthorRepository, AuthorRepository>();
 services.AddScoped<IAuthorService, AuthorService>();
+services.AddScoped<IBookRepository, BookRepository>();
+services.AddScoped<IBookService, BookService>();
 
 using var provider = services.BuildServiceProvider();
 using var scope = provider.CreateScope();
